@@ -1,16 +1,13 @@
 const hre = require("hardhat");
 
 const main = async () => {
-  const StudentIntro = await hre.ethers.getContractFactory("StudentIntro");
-  console.log("Deploying Contract, please wait...");
-  const contract = await StudentIntro.deploy();
-  
-  await contract.deployed.wait(1);
+  const PersonContract = await hre.ethers.getContractFactory("Person");
+  const Person = await PersonContract.deploy();
 
-  console.log("StudentIntro was deployed to: ", transaction.address);
-}
+  await Person.deployed();
 
-
+  console.log("The Person contract was deployed to: ", Person.address);
+};
 
 const runMain = async () => {
   try {
@@ -20,6 +17,6 @@ const runMain = async () => {
     console.error(error);
     process.exit(1);
   }
-}
+};
 
 runMain();

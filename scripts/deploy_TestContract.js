@@ -1,12 +1,15 @@
 const hre = require("hardhat");
 
 const main = async () => {
-  const TestContracts = await hre.ethers.getContractFactory("StudentIntro");
-  const contract = await Transaction.deploy();
+  const TestContract = await hre.ethers.getContractFactory("TestContract");
+  const TestingContractCalls = await TestContract.deploy();
   
-  await transaction.deployed();
+  await TestingContractCalls.deployed();
 
-  console.log("TestContract was deployed to: ", transaction.address);
+  console.log(
+    "The TestContractCall contract was deployed to: ",
+    TestingContractCalls.address
+  );
 }
 
 
