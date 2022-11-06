@@ -383,7 +383,7 @@ Make sure to verify that the `.env` file is added to your `.gitignore` file if y
 
 Note: ***Make sure to copy the contract address printed on the console, You'll need it while making the contract calls***.
 
-* Run the command `npx hardhat run scripts/deploy_TestContract.js --network alfajore` to deploy the `TestContract.sol` contract.
+* Run the command `npx hardhat run scripts/deploy_TestContract.js --network alfajores` to deploy the `TestContract.sol` contract.
 
 Note: ***Make sure to copy the contract address printed on the console, You'll need it making the contract calls***.
 
