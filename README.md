@@ -8,11 +8,11 @@ This way rather than having a messy long line of code, you have a network of con
 
 Throughout this tutorial you will learn how to:
 
-* Install and Setup Hardhat
-* Create a dummy smart contract
-* Use hardhat to deploy to the Celo Alfajores Network  
-* Create a proficient test script on a hardhat  
-* And make contract calls on your deployed contract using hardhat test scripts
+* Install and Setup Hardhat.
+* Create a dummy smart contract.
+* Use hardhat to deploy to the Celo Alfajores Network. 
+* Create a proficient test script on a hardhat.
+* And make contract calls on your deployed contract using hardhat test scripts.
 
 
 # Prerequisites
@@ -26,7 +26,7 @@ You should have the node package manager `npm` pre-installed. Follow the links f
 
 
 ## Brief definition of Keywords
-Before you get started with this tutorial, here is a quick recap of the keywords you'll be working with during this tutorial
+Before you get started with this tutorial, here is a quick recap of the keywords you'll be working with during this tutorial.
 
 ## Celo Alfajores
 The celo Alfajores is a test network run by the Celo Team. It is a blockchain simulation that enables
@@ -47,7 +47,7 @@ Getting faucets is always as easy as taking these few baby steps:
 
 
 ## HardHat
-Hardhat is an Ethereum Development Environment that runs on `ether-js`, and other basic EVM-compatible libraries. It is used for compiling, running, and deploying solidity smart contracts
+Hardhat is an Ethereum Development Environment that runs on `ether-js`, and other basic EVM-compatible libraries. It is used for compiling, running, and deploying solidity smart contracts.
 
 
 ## Calling Contracts 
@@ -60,20 +60,20 @@ Now that you've been reminded of the tools we'll be needing, it's time to get yo
 
 ## Installing Setting up Hardhat
 To get started with the coding part o this tutorial, you need to install Hardhat.
-In the next couple of steps, you will learn how to install Hardhat into your local work environment using yarn on you're preferred Package Manager  
+In the next couple of steps, you will learn how to install Hardhat into your local work environment using yarn on you're preferred Package Manager.  
 
 1. Create a workspace in you're preferred code editor.
 
-2. Go to the terminal of your work environment and run the code `npm init -y`. This is to initialize a `package.json` file 
+2. Go to the terminal of your work environment and run the code `npm init -y`. This is to initialize a `package.json` file.
 
-3. Run the command  `npm install --save-dev hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers`. also, run the command `npm i hardhat-deploy` on your terminal to install all the required dependencies you'll need for this tutorial
+3. Run the command  `npm install --save-dev hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers`. also, run the command `npm i hardhat-deploy` on your terminal to install all the required dependencies you'll need for this tutorial.
 
 4. Next run the command `npx hardhat` to fire up your hardhat development environment. You will be prompted to choose the language you'll be working with.
 
 5. Click enter twice to enable the option `Create a Javascript Project`. and to verify the project location.
 You will notice a new folder structure on your code editor file explorer. 
 
-Now that you have successfully installed and Setup up your hardhat development environment. next you will create the exemplary contracts you need to test the contract calls  
+Now that you have successfully installed and Setup up your hardhat development environment. next you will create the exemplary contracts you need to test the contract calls.
 
 
 ## Creating your Smart Contracts
@@ -97,6 +97,7 @@ contract Person {
     bool has_payed;
     
 }
+
 ```
 Inside the `Person.sol` contract you will create the following simple functions:
 * The first function will be an external function `getDetails` that modifies the public variables `name`, and `age`. The function will accept a person's details as inputs and assign them to the public variables.
