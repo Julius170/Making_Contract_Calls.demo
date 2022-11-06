@@ -203,7 +203,7 @@ When you want to call contracts from other contracts, one of the inputs has to b
 }
 
 ```
-Note: ****Do not copy the function above, it is just a layout on how to structure a calling function.***
+Note: ***Do not copy the function above, it is just a layout on how to structure a calling function.***
 
 To initialize the `TestContract.sol` contract copy the code below:
 ```solidity
