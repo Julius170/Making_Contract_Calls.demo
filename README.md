@@ -47,7 +47,7 @@ Getting faucets is always as easy as taking these few baby steps:
 
 
 ## HardHat
-Hardhat is an Ethereum Development Environment that runs on `ether-js` and `solc-js` and other basic EVM-compatible libraries. It is used for compiling, running, and deploying solidity smart contracts
+Hardhat is an Ethereum Development Environment that runs on `ether-js`, and other basic EVM-compatible libraries. It is used for compiling, running, and deploying solidity smart contracts
 
 
 ## Calling Contracts 
