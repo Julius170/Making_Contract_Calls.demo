@@ -196,7 +196,7 @@ When you want to call contracts from other contracts, one of the inputs has to b
 
 ```solidity
     
-    function <function_name> <(functoin_inputs)> <visibility> <mutability> returns(output_datatype) {
+    function <function_name> <(function_inputs)> <visibility> <mutability> returns(output_datatype) {
         do something
         return something
 }
