@@ -28,12 +28,12 @@ You should have the node package manager `npm` pre-installed. Follow the links f
 Before you get started with this tutorial, here is a quick recap of the keywords you'll be working with during this tutorial.
 
 ## Celo Alfajores
-The celo Alfajores is a test network run by the Celo Team. It is a blockchain simulation that enables
+The [Celo Alfajores](https://blog.celo.org/introducing-alfajores-1b162ebcb44d) is a test network run by the Celo Team. It is a blockchain simulation that enables
 deployments and testing of smart contracts on a fake blockchain. Although it is regarded as a fake blockchain, it primarily simulates deploying and testing contracts on the Celo Blockchain
 It functions exactly as effectively as on the Celo mainnets, except you call transactions using faucet funding (fake money).
 
 ## Faucets
-Faucets are simply fake money funded into your wallet only to interact with a testNet **fake Blockchain**.
+[Faucets](https://coinmarketcap.com/alexandria/article/what-is-a-crypto-faucet) are simply fake money funded into your wallet only to interact with a testNet **fake Blockchain**.
 To make transactions on the Alfajores TestNet you need faucets in Celo USD **CUSD**.
 
 Following this tutorial, you will need **CUSD** faucets to deploy and make transactions on the Celo Alfajores blockchain.
@@ -46,7 +46,7 @@ Getting faucets is always as easy as taking these few baby steps:
 
 
 ## HardHat
-Hardhat is an Ethereum Development Environment that runs on `ether-js`, and other basic EVM-compatible libraries. It is used for compiling, running, and deploying solidity smart contracts.
+[Hardhat](https://hardhat.org/) an Ethereum Development Environment that runs on `ether-js`, and other basic EVM-compatible libraries. It is used for compiling, running, and deploying solidity smart contracts.
 
 
 ## Calling Contracts 
