@@ -411,6 +411,8 @@ Now, to call the functions in the `Person.sol` contract:
 A successful transaction should look like the image below:
 ![Person.sol function test](https://user-images.githubusercontent.com/69092079/200290835-4c612ff6-23bd-4371-9219-572a7cb2f87e.jpg)
 
+![Person.sol function test](https://user-images.githubusercontent.com/69092079/200298700-031d03ca-1a95-465b-973c-2cb6ced15fd4.jpg)
+
 * Run the command `await person.getDetails("Albert", 22)`.
 A successful transaction should look like the image below:
 
@@ -419,6 +421,7 @@ A successful transaction should look like the image below:
 
 Rerun the first command `await person.sayDetails()`, this should return the name and the values input you sent in previously. `Albert` and 22:
 A successful transaction should look like the image below:
+
 ![Person.sol contract test](https://user-images.githubusercontent.com/69092079/200293603-aeba1c32-0305-4c90-b1c9-7ac744bebce3.jpg)
 
 * Run the command `await person.payFee()`.
@@ -456,19 +459,15 @@ A successful transaction should look like the image below:
 
 ![Test Contract Call](https://user-images.githubusercontent.com/69092079/200296787-ecae4d6c-61ac-4e25-80be-fbede8931cc5.jpg)
 
-
-
 * Run the command `await test.callpayFee("0xA019Ad7Ed1F3fc0276E0854F2fF022EFeFf5C8e1")`.
 A successful transaction should look like the image below:
 
 ![Testing Contract Call](https://user-images.githubusercontent.com/69092079/200297519-8b662168-1d4a-4648-a31a-2fb9166c1ec0.jpg)
 
-
 * Run the command `await test.callgetValue("0xA019Ad7Ed1F3fc0276E0854F2fF022EFeFf5C8e1")`.
 A successful transaction should look like the image below:
 
 ![Test Contract Call](https://user-images.githubusercontent.com/69092079/200297582-975041d8-986a-4582-917c-6380a9ea6aa8.jpg)
-
 
 # Conclusion
 Finálè, you complete and learned quite a lot of new things here, 
