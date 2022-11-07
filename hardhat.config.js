@@ -24,6 +24,8 @@ module.exports = {
       url: "http://127.0.0.1:7545",
     },
     alfajores: {
+      gasPrice: 1500000000,
+      gas: 4100000,
       url: "https://alfajores-forno.celo-testnet.org",
       accounts: {
         mnemonic: process.env.MNEMONIC,
