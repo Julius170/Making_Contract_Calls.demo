@@ -366,7 +366,7 @@ const runMain = async () => {
 runMain();
 ```
 
-7. Next, head over to the `hardhat.config.js` file in the root folder and replace the hardhat config. code there with the Celo configuration code here.
+7. Next, head over to the `hardhat.config.js` file in the root folder and replace the hardhat config. code there with the Celo configuration code [here](https://github.com/Julius170/Making_Contract_Calls.demo/blob/master/hardhat.config.js).
 
 8. Replace the solidity version specified at the bottom of the `hardhat.config.js` file with the same version of solidity specified in your contracts.
 
