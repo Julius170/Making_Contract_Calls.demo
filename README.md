@@ -396,9 +396,9 @@ You'll be making use of the built-in hardhat tool **Hardhat Console** to interac
 
 Note: 
 
-1. Firstly, you'll have to test the functions in the `Person.sol` contract by calling the function.
+1. Firstly, you'll have to test the functions in the `Person.sol` contract by calling the functions.
 
-* To begin, Run the code `const Person = await ethers.getContractFactory(Person")`, to simply get the deployed contract factory.
+* To begin, Run the code `const Person = await ethers.getContractFactory("Person")`, to simply get the deployed contract factory.
 
 A successful transaction should look like the image below:
 
@@ -424,7 +424,7 @@ A successful transaction should look like the image below:
 
 2. Now that you know what the functions in the `Person.sol` contract does, Now it's time to try calling the same function from another deployed contract `TestContract.sol`.
 
-* To begin, Run the code `const TestContract = await ethers.getContractFactory(TestContract")`, to simply get the deployed contract factory.
+* To begin, Run the code `const TestContract = await ethers.getContractFactory("TestContract")`, to simply get the deployed contract factory.
 
 * Next, run the command `const test = await TestContract.attach("<TestContract.sol_contract_address>")`, to gain access to the contract on the blockchain:
 
