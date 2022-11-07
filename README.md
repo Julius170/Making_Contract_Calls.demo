@@ -419,7 +419,7 @@ A successful transaction should look like the image below:
 * Run the command `await person.payFee()`.
 A successful transaction should look like the image below:
 
-* Run the command `await person.getvalue()`.  
+* Run the command `await person.getValue()`.  
 A successful transaction should look like the image below:
 
 2. Now that you know what the functions in the `Person.sol` contract does, Now it's time to try calling the same function from another deployed contract `TestContract.sol`.
