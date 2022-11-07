@@ -474,3 +474,4 @@ Finálè, you complete and learned quite a lot of new things here,
 You created two smart contracts, one will call functions and the other to make contract calls across the blockchain, You deployed both contracts to the Celo Blockchain successfully. You also interact with the deployed contract using the Hardhat Console and you made several contract calls on the celo blockchain.
 
 ***Congratulations on taking another big step into the web3 rabbit hole***.
+Here is a link to the complete Demo file of this [tutorial](https://github.com/Julius170/Making_Contract_Calls.demo).
