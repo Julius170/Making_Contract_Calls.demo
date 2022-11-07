@@ -400,32 +400,37 @@ Note:
 
 * To begin, Run the code `const Person = await ethers.getContractFactory("Person")`, to simply get the deployed contract factory.
 
+* Next, run the command `const person = await Person.attach("<Person.sol_contract_address>")`, to gain access to the contract on the blockchain.
+
 A successful transaction should look like the image below:
 ![Person.sol Contract Factory](https://user-images.githubusercontent.com/69092079/200288397-8bfc23e6-1ca3-4e12-8aea-663363916a1e.jpg)
-
-
-* Next, run the command `const person = await Person.attach("<Person.sol_contract_address>")`, to gain access to the contract on the blockchain.
 
 Now, to call the functions in the `Person.sol` contract:
 
 * Run the command `await person.sayDetails()`, returns empty variables `name` and `age`.
 A successful transaction should look like the image below:
-![Person.sol function test](https://user-images.githubusercontent.com/69092079/200290073-b8d2d81b-f630-4836-b703-fb00a0d8c2fe.jpg)
-
+![Person.sol function test](https://user-images.githubusercontent.com/69092079/200290835-4c612ff6-23bd-4371-9219-572a7cb2f87e.jpg)
 
 * Run the command `await person.getDetails("Albert", 22)`.
 A successful transaction should look like the image below:
 
-![Person.sol function test](https://user-images.githubusercontent.com/69092079/200290835-4c612ff6-23bd-4371-9219-572a7cb2f87e.jpg)
+![Person.sol contract test](https://user-images.githubusercontent.com/69092079/200293344-89ac757f-abcc-47e0-bd9c-3942f54c1d5c.png)
+
 
 Rerun the first command `await person.sayDetails()`, this should return the name and the values input you sent in previously. `Albert` and 22:
 A successful transaction should look like the image below:
+![Person.sol contract test](https://user-images.githubusercontent.com/69092079/200293603-aeba1c32-0305-4c90-b1c9-7ac744bebce3.jpg)
 
 * Run the command `await person.payFee()`.
 A successful transaction should look like the image below:
 
+![Person.sol contract test](https://user-images.githubusercontent.com/69092079/200293867-f832a3f3-333f-4ca6-b803-3787b101be1c.jpg)
+
 * Run the command `await person.getValue()`.  
 A successful transaction should look like the image below:
+
+![Person.sol Contract test](https://user-images.githubusercontent.com/69092079/200294069-0bc22c19-d67e-4fd7-80a2-90184d50fd50.jpg)
+
 
 2. Now that you know what the functions in the `Person.sol` contract does, Now it's time to try calling the same function from another deployed contract `TestContract.sol`.
 
@@ -434,23 +439,36 @@ A successful transaction should look like the image below:
 * Next, run the command `const test = await TestContract.attach("<TestContract.sol_contract_address>")`, to gain access to the contract on the blockchain:
 
 A successful transaction should look like the image below:
+![[Test Contract Factory](https://user-images.githubusercontent.com/69092079/200295770-0b11ea62-6f43-4db6-b67b-fc12418cef8a.jpg)
 
 Note: ***This is where you'll need the contract address of the `Person.sol` You will need to pass the address as the first argument to all the function calls***
 
 ***assuming the deployed `Person.sol` contract address is: 0xA019Ad7Ed1F3fc0276E0854F2fF022EFeFf5C8e1***
 
-* Run the command `await test.callGetDetails("0xA019Ad7Ed1F3fc0276E0854F2fF022EFeFf5C8e1", "Julia", 25)`
+* Run the command `await test.callGetDetails("0xA019Ad7Ed1F3fc0276E0854F2fF022EFeFf5C8e1", "Julia", 25)`.
 A successful transaction should look like the image below:
 
-* Run the command `await test.callSayDetails("0xA019Ad7Ed1F3fc0276E0854F2fF022EFeFf5C8e1")`
-A successful transaction should look like the image below:
-
-* Run the command `await test.callpayFee("0xA019Ad7Ed1F3fc0276E0854F2fF022EFeFf5C8e1")`
-A successful transaction should look like the image below:
+![Test Contract Calling](https://user-images.githubusercontent.com/69092079/200296284-4b71b095-7e15-49ed-9ab8-afd7c1570e3b.jpg)
 
 
-* Run the command `await test.callgetValue("0xA019Ad7Ed1F3fc0276E0854F2fF022EFeFf5C8e1")`
+* Run the command `await test.callSayDetails("0xA019Ad7Ed1F3fc0276E0854F2fF022EFeFf5C8e1")`.
 A successful transaction should look like the image below:
+
+![Test Contract Call](https://user-images.githubusercontent.com/69092079/200296787-ecae4d6c-61ac-4e25-80be-fbede8931cc5.jpg)
+
+
+
+* Run the command `await test.callpayFee("0xA019Ad7Ed1F3fc0276E0854F2fF022EFeFf5C8e1")`.
+A successful transaction should look like the image below:
+
+![Testing Contract Call](https://user-images.githubusercontent.com/69092079/200297519-8b662168-1d4a-4648-a31a-2fb9166c1ec0.jpg)
+
+
+* Run the command `await test.callgetValue("0xA019Ad7Ed1F3fc0276E0854F2fF022EFeFf5C8e1")`.
+A successful transaction should look like the image below:
+
+![Test Contract Call](https://user-images.githubusercontent.com/69092079/200297582-975041d8-986a-4582-917c-6380a9ea6aa8.jpg)
+
 
 # Conclusion
 Finálè, you complete and learned quite a lot of new things here, 
