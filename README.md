@@ -439,7 +439,7 @@ A successful transaction should look like the image below:
 * Next, run the command `const test = await TestContract.attach("<TestContract.sol_contract_address>")`, to gain access to the contract on the blockchain:
 
 A successful transaction should look like the image below:
-![[Test Contract Factory](https://user-images.githubusercontent.com/69092079/200295770-0b11ea62-6f43-4db6-b67b-fc12418cef8a.jpg)
+![Test Contract Factory](https://user-images.githubusercontent.com/69092079/200295770-0b11ea62-6f43-4db6-b67b-fc12418cef8a.jpg)
 
 Note: ***This is where you'll need the contract address of the `Person.sol` You will need to pass the address as the first argument to all the function calls***
 
