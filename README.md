@@ -385,7 +385,7 @@ Note: ***Make sure to copy the contract address printed on the console, You'll n
 
 * Run the command `npx hardhat run scripts/deploy_TestContract.js --network alfajores` to deploy the `TestContract.sol` contract.
 
-Note: ***Make sure to copy the contract address printed on the console, You'll need it making the contract calls***.
+Note: ***Make sure to copy the contract address printed on the console, You'll need it while making the contract calls***.
 
 ***And Voila, Contracts Deployed...🥂📝***
  
@@ -401,6 +401,8 @@ Note:
 * To begin, Run the code `const Person = await ethers.getContractFactory("Person")`, to simply get the deployed contract factory.
 
 A successful transaction should look like the image below:
+![Person.sol Contract Factory](https://user-images.githubusercontent.com/69092079/200288397-8bfc23e6-1ca3-4e12-8aea-663363916a1e.jpg)
+
 
 * Next, run the command `const person = await Person.attach("<Person.sol_contract_address>")`, to gain access to the contract on the blockchain.
 
@@ -408,10 +410,13 @@ Now, to call the functions in the `Person.sol` contract:
 
 * Run the command `await person.sayDetails()`, returns empty variables `name` and `age`.
 A successful transaction should look like the image below:
+![Person.sol function test](https://user-images.githubusercontent.com/69092079/200290073-b8d2d81b-f630-4836-b703-fb00a0d8c2fe.jpg)
+
 
 * Run the command `await person.getDetails("Albert", 22)`.
 A successful transaction should look like the image below:
 
+![Person.sol function test](https://user-images.githubusercontent.com/69092079/200290835-4c612ff6-23bd-4371-9219-572a7cb2f87e.jpg)
 
 Rerun the first command `await person.sayDetails()`, this should return the name and the values input you sent in previously. `Albert` and 22:
 A successful transaction should look like the image below:
