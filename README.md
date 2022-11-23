@@ -148,7 +148,7 @@ Copy and add the function below into the `Person.sol` contract.
 The four functions created are sample functions to copy a real scenario of calling different types of functions from a contract.
 
 
-Note: ***Alternatively, When creating contract calls you can also use the keyword `Interface` to initialize the calling contract. To know more about the interface Keyword and other Basic Solidity Data Types click here***. 
+***Note: Alternatively, When creating contract calls you can also use the keyword `Interface` to initialize the calling contract. To know more about the interface Keyword and other Basic Solidity Data Types click here***. 
 
 
 For Uniformity, purposes copy and paste the entire code below into the `Person.sol` contract file.
@@ -217,7 +217,7 @@ contract TestContract {
 }
 
 ```
-Note: ***You'll need to import the `Person.sol` contract to refer to the functions in the `Person.sol` contract you'll be calling***.
+***Note: You'll need to import the `Person.sol` contract to refer to the functions in the `Person.sol` contract you'll be calling***.
 
 * The first function `callGetDetails` accepts the address of the deployed `Person.sol` contract  as `_test` and the other arguments `_name`, `_age` to pass to the `getDetails` function in the `Person.sol` contract.
 
@@ -252,7 +252,7 @@ Copy and add the function below to the contract:
     }
     
 ```
-The last function `callgetValue`will be called the `getValue` from the previous contract `Person.sol`. The function will simply return the same values that the `getValue` function returns.
+* The last function `callgetValue`will be called the `getValue` from the previous contract `Person.sol`. The function will simply return the same values that the `getValue` function returns.
 
 ```solidity
 
@@ -337,7 +337,7 @@ const runMain = async () => {
 runMain();
 ```
 
-5. Copy and Paste the code below into the `deploy_TestContract.js` file:
+4. Copy and Paste the code below into the `deploy_TestContract.js` file:
 ```JavaScript 
 const hre = require("hardhat");
 
@@ -366,26 +366,26 @@ const runMain = async () => {
 runMain();
 ```
 
-7. Next, head over to the `hardhat.config.js` file in the root folder and replace the hardhat config. code there with the Celo configuration code [here](https://github.com/Julius170/Making_Contract_Calls.demo/blob/master/hardhat.config.js).
+5. Next, head over to the `hardhat.config.js` file in the root folder and replace the hardhat config. code there with the Celo configuration code [here](https://github.com/Julius170/Making_Contract_Calls.demo/blob/master/hardhat.config.js).
 
-8. Replace the solidity version specified at the bottom of the `hardhat.config.js` file with the same version of solidity specified in your contracts.
+6. Replace the solidity version specified at the bottom of the `hardhat.config.js` file with the same version of solidity specified in your contracts.
 
-9. Run the command `npm i dotenv` to download the `dotenv` dependency, and create a new file in the root folder `.env`.
+7. Run the command `npm i dotenv` to download the `dotenv` dependency, and create a new file in the root folder `.env`.
 
-10. Create a variable name `MNEMONIC` inside the dotenv file and add your intended wallet **MNEMONICs** as the value.
+8. Create a variable name `MNEMONIC` inside the dotenv file and add your intended wallet **MNEMONICs** as the value.
 
-Note: ***Your Wallet's MNEMONICs is simple the recovery phrase used in creating your wallet. Still not clear on what your MNEMONICs are? Here's a quick read. 
+***Note: Your Wallet's MNEMONICs is simple the recovery phrase used in creating your wallet. Still not clear on what your MNEMONICs are? Here's a quick read. 
 Make sure to verify that the `.env` file is added to your `.gitignore` file if you'll be pushing to any version control***.
 
-11. Finally, run the Following Command to deploy the two contracts:
+9. Finally, run the Following Command to deploy the two contracts:
 
 * Run the command `npx hardhat run scripts/deploy_PersonContract.js --network alfajores` to deploy the `Person.sol` contract.
 
-Note: ***Make sure to copy the contract address printed on the console, You'll need it while making the contract calls***.
+***Note: Make sure to copy the contract address printed on the console, You'll need it while making the contract calls***.
 
 * Run the command `npx hardhat run scripts/deploy_TestContract.js --network alfajores` to deploy the `TestContract.sol` contract.
 
-Note: ***Make sure to copy the contract address printed on the console, You'll need it while making the contract calls***.
+***Note: Make sure to copy the contract address printed on the console, You'll need it while making the contract calls***.
 
 ***And Voila, Contracts Deployed...🥂📝***
  
@@ -444,7 +444,7 @@ A successful transaction should look like the image below:
 A successful transaction should look like the image below:
 ![Test Contract Factory](https://user-images.githubusercontent.com/69092079/200295770-0b11ea62-6f43-4db6-b67b-fc12418cef8a.jpg)
 
-Note: ***This is where you'll need the contract address of the `Person.sol` You will need to pass the address as the first argument to all the function calls***
+***Note: This is where you'll need the contract address of the `Person.sol` You will need to pass the address as the first argument to all the function calls***
 
 ***assuming the deployed `Person.sol` contract address is: 0xA019Ad7Ed1F3fc0276E0854F2fF022EFeFf5C8e1***
 
