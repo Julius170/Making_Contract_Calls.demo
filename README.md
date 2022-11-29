@@ -23,7 +23,7 @@ To get the best out of this tutorial, you should have a basic and foundational u
 You should have the node package manager `npm` pre-installed. Follow the links for more information on installing `node` and node package manager `npm`.
 
 # Requirements
-* We'll need Metamask in this tutorial. Install it from HERE.
+* We'll need Metamask in this tutorial. Install it from [HERE](https://metamask.io/).
 * Make sure to have NodeJS 12.0.1+ version installed.
 
 
