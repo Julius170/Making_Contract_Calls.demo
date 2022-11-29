@@ -31,7 +31,8 @@ You should have the node package manager `npm` pre-installed. Follow the links f
 Before you get started with this tutorial, here is a quick recap of the keywords you'll be working with during this tutorial.
 
 ## Celo Alfajores
-The [Celo Alfajores](https://blog.celo.org/introducing-alfajores-1b162ebcb44d) is a test network run by the Celo Team. It is a blockchain simulation that enables deployments and testing of smart contracts on a testing  blockchain. Although it is regarded as a testing blockchain, it primarily simulates deploying and testing contracts on the Celo Blockchain
+The [Celo Alfajores](https://blog.celo.org/introducing-alfajores-1b162ebcb44d) is a test network run by the Celo Team. It is a blockchain simulation that enables deployments and testing of smart contracts on a testing  blockchain. Although it is regarded as a testing blockchain, it primarily simulates deploying and testing contracts on the Celo Blockchain.
+
 It functions exactly as effectively as on the Celo mainnets, except you call transactions using faucet funding (testnet money).
 
 ## Faucets
@@ -40,7 +41,7 @@ To make transactions on the Alfajores Testnet you need CELO Testnet **tokens**.
 
 Following this tutorial, you will need **CELO faucets** to deploy and transact on the Celo Alfajores blockchain.
 Getting faucets is always as easy as taking these few baby steps:
-1. Head over to the [faucet](https://link-url-here.org) site for the testnet you need. For example, a Celo Alfajore faucet will give you tokens to interact with the Celo Alfajore testnet (which you will also use in this tutoria).
+1. Head over to the [faucet](https://celo.org/developers/faucet) site for the testnet you need. For example, a Celo Alfajore faucet will give you tokens to interact with the Celo Alfajore testnet (which you will also use in this tutoria).
 
 2. Copy your wallet address from metamask or your preferred wallet and paste it into the tab.
 
@@ -77,6 +78,7 @@ Now that you have successfully installed and Setup up your hardhat development e
 
 # Creating your Smart Contracts
 To simulate a contract call, you will need to create two smart contracts. These two contracts will be deployed on the Celo Blockchain.
+
 One of the contracts will have the calling functions `TestContract.sol`, while the other contract, `Person.sol` will have the functions you will be calling from the previous contract, `TestContract.sol`.
 
 ## The Calling Contract **`Person`**:
@@ -377,14 +379,12 @@ runMain();
 
 8. Create a variable name `MNEMONIC` inside the dotenv file and add your intended wallet MNEMONICs as the value.
 
-8. Create a variable name **`MNEMONIC`** inside the dotenv file and add your intended wallet **MNEMONICs** as the value.
-
 ***Note: Your Wallet's MNEMONICs is simply the recovery phrase used in creating your wallet. Still not clear on what your MNEMONICs are? Here's a [quick read](https://vault12.com/securemycrypto/crypto-security-basics/mnemonic-seed-recovery-phrase/). 
 Ensure that the `.env` file is added to your `.gitignore` file if you'll be pushing to any version control.***.
 
 9. Finally, run the Following Command to deploy the two contracts:
 
-Run the command `npx hardhat run scripts/deploy_PersonContract.js --network alfajores` to deploy the `Person.sol` contract.
+* Run the command `npx hardhat run scripts/deploy_PersonContract.js --network alfajores` to deploy the `Person.sol` contract.
 
 
 ***Note: Make sure to copy the contract address printed on the console; you'll need it while making the contract calls.***.
